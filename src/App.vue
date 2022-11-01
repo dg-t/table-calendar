@@ -1,5 +1,17 @@
 <template>
-  <h1 class="bg-gray-100">Table Calendar</h1>
+  <div class="bg-gray-100 h-screen">
+    <h1>Table Calendar</h1>
+    <CalendarPage />
+  </div>
 </template>
 
-<style scoped></style>
+<script>
+import CalendarPage from './views/calendar/CalendarPage.vue';
+
+export default {
+  name: 'App',
+  components: {
+    CalendarPage,
+  },
+};
+</script>
